@@ -11,7 +11,7 @@ function loadCommentsForTab(tab) {
         .then(getTopLink)
         .then(makeTab)
         .catch(function() {
-            console.log('no comments found');
+            console.log('no comments found or reddit search failed');
         });
 }
 
