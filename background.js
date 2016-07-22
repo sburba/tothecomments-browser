@@ -2,10 +2,6 @@ chrome.browserAction.onClicked.addListener(loadCommentsForTab);
 
 const URL_SEARCH_PREFIX = 'https://www.reddit.com/search.json?sort=comments&q=url:';
 
-/**
- *
- * @param {Tab} tab
- */
 function loadCommentsForTab(tab) {
     doSearchForUrl(tab.url)
         .then(getTopLink)
