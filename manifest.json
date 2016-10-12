@@ -1,15 +1,14 @@
 {
   "manifest_version": 2,
-
   "name": "To the Comments!",
   "description": "View the reddit or hn comments for a given page",
   "version": "0.0.1",
-
+  "permissions": [
+    "activeTab"
+  ],
   "browser_action": {
-    "default_icon": "comment.png",
-    "default_title": "To the Comments!"
-  },
-  "background": {
-    "scripts": [ "background.js" ]
+    "default_icon": "src/images/comment.png",
+    "default_title": "To the Comments!",
+    "default_popup": "src/popup.html"
   }
 }
