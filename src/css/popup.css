@@ -3,7 +3,7 @@ body {
     max-width: 650px;
     min-width: 300px;
     line-height: 1.6;
-    font-size: 18px;
+    font-size: 1.125em;
     color: #444;
     padding: 0 10px
 }
