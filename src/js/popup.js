@@ -35,11 +35,11 @@ function getActiveUrl() {
 }
 
 function renderComments(comments) {
-    document.body.innerHTML = Mustache.render(COMMENTS_TEMPLATE, comments);
+    document.getElementById('content').innerHTML = Mustache.render(COMMENTS_TEMPLATE, comments);
 }
 
 function showError(err) {
-    document.body.innerHTML = Mustache.render(ERROR_TEMPLATE, err);
+     document.getElementById('content').innerHTML = Mustache.render(ERROR_TEMPLATE, err);
 }
 
 getActiveUrl()
