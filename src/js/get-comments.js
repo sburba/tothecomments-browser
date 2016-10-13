@@ -2,7 +2,7 @@
     const REDDIT_URL_SEARCH_PREFIX = 'https://www.reddit.com/search.json?sort=comments&q=url:';
     const HACKER_NEWS_URL_SEARCH_PREFIX = 'https://hn.algolia.com/api/v1/search?restrictSearchableAttributes=url&query=';
 
-    var COMMENT_PROVIDERS = [reddit, hn];
+    const COMMENT_PROVIDERS = [reddit, hn];
 
     function getComments(url) {
         return Promise.all(COMMENT_PROVIDERS.map(provider => provider(url)))
