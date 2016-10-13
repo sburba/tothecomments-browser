@@ -1,5 +1,4 @@
 body {
-    margin: 40px auto;
     max-width: 650px;
     min-width: 300px;
     line-height: 1.6;
@@ -10,4 +9,13 @@ body {
 
 h1,h2,h3 {
     line-height: 1.2
+}
+
+footer {
+    font-size: .65em;
+    margin: 0;
+}
+
+footer h1 {
+    font-size: 1em;
 }
