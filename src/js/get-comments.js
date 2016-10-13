@@ -3,6 +3,13 @@
     const HACKER_NEWS_URL_SEARCH_PREFIX = 'https://hn.algolia.com/api/v1/search?restrictSearchableAttributes=url&query=';
 
     const COMMENT_PROVIDERS = [reddit, hn];
+    const EXTENSION_VERSION = chrome.runtime.getManifest().version;
+
+    const REQ_CONFIG = {
+        headers: {
+            'User-Agent': `webextension:com.samburba.tothecomments:${EXTENSION_VERSION}`
+        }
+    };
 
     function getComments(url) {
         return Promise.all(COMMENT_PROVIDERS.map(provider => provider(url)))
@@ -15,7 +22,7 @@
 
     function reddit(url) {
         let search = REDDIT_URL_SEARCH_PREFIX + url;
-        return fetch(search)
+        return fetch(search, REQ_CONFIG)
             .then(getJson)
             .then(redditTopFive)
             .then(topFive => ({name: 'reddit', comments: topFive}))
@@ -24,7 +31,7 @@
 
     function hn(url) {
         let search = HACKER_NEWS_URL_SEARCH_PREFIX + url;
-        return fetch(search)
+        return fetch(search, REQ_CONFIG)
             .then(getJson)
             .then(hnTopFive)
             .then(topFive => ({name: 'Hacker News', comments: topFive}))
