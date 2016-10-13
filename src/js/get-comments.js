@@ -37,7 +37,7 @@
                 title: child.data.title,
                 link: 'https://reddit.com' + child.data.permalink
             }
-        });
+        }).slice(0, 5);
     }
 
     function hnTopFive(searchJson) {
@@ -46,7 +46,7 @@
                 title: hit.title,
                 link: 'https://news.ycombinator.com/item?id=' + hit.objectID
             }
-        });
+        }).slice(0, 5);
     }
 
     function getJson(response) {
