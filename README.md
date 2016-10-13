@@ -8,7 +8,7 @@ Don't. There's no build process, the only dependency is mustache.js and it's che
 simple needs.
 
 # Thanks
-    1. [mustache.js](https://github.com/janl/mustache.js)
-    2. [Bambang Dewanto via iconfinder](https://www.iconfinder.com/icons/1296362/bubble_chat_communication_conversation_message_icon)
-    3. [The reddit API](https://www.reddit.com/dev/api/)
-    4. [Algolia's HN API](https://hn.algolia.com/api)
+* [mustache.js](https://github.com/janl/mustache.js)
+* [Bambang Dewanto via iconfinder](https://www.iconfinder.com/icons/1296362/bubble_chat_communication_conversation_message_icon)
+* [The reddit API](https://www.reddit.com/dev/api/)
+* [Algolia's HN API](https://hn.algolia.com/api)
