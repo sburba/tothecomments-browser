@@ -44,7 +44,7 @@
         return searchJson.hits.map(hit => {
             return {
                 title: hit.title,
-                link: 'https://news.ycombinator.com/item?id=' + searchJson.hits[0].objectID
+                link: 'https://news.ycombinator.com/item?id=' + hit.objectID
             }
         });
     }
