@@ -16,8 +16,8 @@
     "persistent": false
   },
   "commands": {
-    "open-comments-page": {
-      "_execute_browser_action": {
+    "_execute_browser_action": {
+      "suggested_key": {
         "default" : "Alt+C"
       },
       "description": "Show comments for current page"
