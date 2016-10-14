@@ -11,6 +11,11 @@
         }
     };
 
+    /**
+     * Get the top five comments from hn and reddit
+     * @param {String} url
+     * @return {Promise.<{name: String, comments: Array.<{title: String, link: String}>}>}
+     */
     function getComments(url) {
         return Promise.all(COMMENT_PROVIDERS.map(provider => provider(url)))
             .then(sections => sections.filter(hasComments));

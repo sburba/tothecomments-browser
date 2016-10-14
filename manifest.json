@@ -10,5 +10,29 @@
     "default_icon": "src/images/comment.png",
     "default_title": "To the Comments!",
     "default_popup": "src/popup.html"
+  },
+  "background": {
+    "scripts": ["src/js/get-active-url.js", "src/js/get-comments.js", "src/js/background.js"],
+    "persistent": false
+  },
+  "commands": {
+    "open-comments-page": {
+      "_execute_browser_action": {
+        "default" : "Alt+C"
+      },
+      "description": "Show comments for current page"
+    },
+    "open-top-reddit-link": {
+      "suggested_key": {
+        "default": "Alt+R"
+      },
+      "description": "Open the top reddit link for this page"
+    },
+    "open-top-hn-link": {
+      "suggested_key": {
+        "default": "Alt+H"
+      },
+      "description": "Open the top Hacker News link for this page"
+    }
   }
 }
