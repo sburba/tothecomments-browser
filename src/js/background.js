@@ -4,7 +4,7 @@ chrome.commands.onCommand.addListener(function(command) {
             getActiveUrl().then(getComments).then(sections => topLink(sections, 'reddit')).then(makeTab);
             break;
         case 'open-top-hn-link':
-            getActiveUrl().then(getComments).then(sections => topLink(sections, 'hn')).then(makeTab);
+            getActiveUrl().then(getComments).then(sections => topLink(sections, 'Hacker News')).then(makeTab);
             break;
     }
 });
