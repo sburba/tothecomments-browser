@@ -15,15 +15,7 @@
     }
 
     function getUrlFromPopup() {
-        return new Promise(function(resolve, reject) {
-            chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
-                if (chrome.runtime.lastError || !tabs || !tabs.length) {
-                    reject();
-                } else {
-                    resolve(tabs[0].url);
-                }
-            })
-        })
+        return getActiveTab().then(tab => tab.url);
     }
 
     window.getActiveUrl = getActiveUrl;
