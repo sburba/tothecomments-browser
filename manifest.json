@@ -16,6 +16,7 @@
   },
   "background": {
     "scripts": [
+      "src/js/get-active-tab.js",
       "src/js/get-active-url.js",
       "src/js/get-comments.js",
       "src/js/background.js"
