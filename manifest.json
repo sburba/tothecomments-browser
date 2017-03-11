@@ -3,6 +3,9 @@
   "name": "To the Comments!",
   "description": "View the reddit or Hacker News comments for a given page",
   "version": "1.0.0",
+  "icons": {
+    "128": "src/images/comment.png"
+  },
   "permissions": [
     "activeTab"
   ],
