@@ -9,8 +9,11 @@ chrome.commands.onCommand.addListener(function (command) {
     }
 });
 
+let TIMEOUT_MS = 4000;
+
 function showTopLink(tab, commentProvider) {
-    const fetchTopLink = getComments(tab.url).then(sections => topLink(sections, commentProvider));
+    const timeout = new Promise((_, reject) => setTimeout(reject, TIMEOUT_MS));
+    const fetchTopLink = Promise.race([getComments(tab.url), timeout]).then(sections => topLink(sections, commentProvider));
     const injectInfoBar = Promise.all([injectScript(tab, 'info-bar'), injectCss(tab, 'info-bar')])
         .then(() => chrome.tabs.sendMessage(tab.id, 'Loading...'));
 
