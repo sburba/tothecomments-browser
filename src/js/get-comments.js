@@ -1,6 +1,6 @@
 (function() {
     const REDDIT_URL_SEARCH_PREFIX = 'https://www.reddit.com/search.json?sort=comments&q=url:';
-    const HACKER_NEWS_URL_SEARCH_PREFIX = 'https://hn.algolia.com/api/v1/search?restrictSearchableAttributes=url&query=';
+    const HACKER_NEWS_URL_SEARCH_PREFIX = 'https://hn.algolia.com/api/v1/search?restrictSearchableAttributes=url&hitsPerPage=5&query=';
 
     const COMMENT_PROVIDERS = [reddit, hn];
     const EXTENSION_VERSION = chrome.runtime.getManifest().version;
