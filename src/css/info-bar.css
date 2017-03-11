@@ -1,0 +1,33 @@
+/**
+ * This is a stylesheet that will be injected into arbitrary pages therefore, we have to do a few unusual things to
+ * reduce collisions
+ *
+ * 1: All css classes have the same long prefix that is unlikely to show up on other peoples pages
+ * 2: All css properties are marked important to reduce the likelihood that other website's styles will override ours
+ * 3: We specify a bunch of css properties to the default
+ */
+
+.samburba-tothecomments-alert {
+    border-radius: 4px !important;
+    border: 1px solid transparent !important;
+    left: calc(50% - 500px/2) !important;
+    margin-bottom: 20px !important;
+    margin-top: 10px !important;
+    max-height: 100px !important;
+    padding: 15px !important;
+    position: fixed !important;
+    text-align: center !important;
+    top: 0 !important;
+    width: 500px !important;
+    z-index: 99999999 !important;
+}
+
+.samburba-tothecomments-alert-info {
+    background-color: #d9edf7 !important;
+    border-color: #bce8f1 !important;
+    color: #31708f !important;
+}
+
+.samburba-tothecomments-hidden {
+    display: none !important;
+}
