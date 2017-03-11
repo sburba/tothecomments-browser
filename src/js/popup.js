@@ -1,4 +1,4 @@
-var COMMENTS_TEMPLATE = `
+const COMMENTS_TEMPLATE = `
 {{#.}}
     <h1>{{name}}</h1>
     <ul>
@@ -12,7 +12,7 @@ var COMMENTS_TEMPLATE = `
 {{/.}}
 `;
 
-var ERROR_TEMPLATE = `
+const ERROR_TEMPLATE = `
     <h1>Error :(</h1>
     
     <p>Something has gone horrendously wrong, and there's nothing you can do about it.</p>
