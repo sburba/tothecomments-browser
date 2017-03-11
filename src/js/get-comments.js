@@ -7,7 +7,7 @@
 
     const REQ_CONFIG = {
         headers: {
-            'User-Agent': `webextension:com.samburba.tothecomments:${EXTENSION_VERSION} (by /u/thisnameistoolon)`
+            'User-Agent': `webextension:io.burba.tothecomments:${EXTENSION_VERSION} (by /u/thisnameistoolon)`
         }
     };
 
