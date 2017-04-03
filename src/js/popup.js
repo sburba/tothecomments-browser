@@ -3,7 +3,7 @@ const COMMENTS_TEMPLATE = `
     <h1>{{name}}</h1>
     <ul>
     {{#comments}}
-        <li><a href="{{link}}" target="_blank" rel="noopener noreferrer">{{title}}</a> </li>
+        <li>{{#subreddit}}<span class="subreddit-name">/r/{{subreddit}}</span>{{/subreddit}}<a href="{{link}}" target="_blank" rel="noopener noreferrer">{{title}}</a> </li>
     {{/comments}}
     </ul>
 {{/.}}

@@ -19,3 +19,7 @@ footer {
 footer h1 {
     font-size: 1em;
 }
+.subreddit-name {
+    display: block;
+    font-size: .8em;
+}

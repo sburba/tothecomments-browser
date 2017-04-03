@@ -30,7 +30,7 @@
         return fetch(search, REQ_CONFIG)
             .then(getJson)
             .then(redditTopFive)
-            .then(topFive => ({name: 'reddit', comments: topFive}))
+	        .then(topFive => ({name: 'reddit', className: 'reddit', comments: topFive}))
             .catch(() => null);
     }
 
@@ -39,7 +39,7 @@
         return fetch(search, REQ_CONFIG)
             .then(getJson)
             .then(hnTopFive)
-            .then(topFive => ({name: 'Hacker News', comments: topFive}))
+	        .then(topFive => ({name: 'Hacker News', className: 'hacker-news', comments: topFive}))
             .catch(() => null);
     }
 
@@ -47,7 +47,8 @@
         return searchJson.data.children.map((child) => {
             return {
                 title: child.data.title,
-                link: 'https://reddit.com' + child.data.permalink
+                link: 'https://reddit.com' + child.data.permalink,
+	            subreddit: child.data.subreddit
             }
         }).slice(0, 5);
     }
