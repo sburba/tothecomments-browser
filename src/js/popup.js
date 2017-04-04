@@ -3,17 +3,17 @@ const COMMENTS_TEMPLATE = `
     <h1>{{name}}</h1>
     <ul>
     {{#comments}}
-        <li>{{#subreddit}}<span class="subreddit-name">/r/{{subreddit}}</span>{{/subreddit}}<a href="{{link}}" target="_blank" rel="noopener noreferrer">{{title}}</a> </li>
+        <li>{{#subreddit}}<span>/r/{{subreddit}}</span>{{/subreddit}}<a href="{{link}}" target="_blank" rel="noopener noreferrer">{{title}}</a></li>
     {{/comments}}
     </ul>
 {{/.}}
 {{^.}}
-    <h1>No comments found :(</h1>
+    <h2>No comments found :(</h2>
 {{/.}}
 `;
 
 const ERROR_TEMPLATE = `
-    <h1>Error :(</h1>
+    <h2>Error :(</h2>
     
     <p>Something has gone horrendously wrong, and there's nothing you can do about it.</p>
     

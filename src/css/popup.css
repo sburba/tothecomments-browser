@@ -11,16 +11,68 @@ h1,h2,h3 {
     line-height: 1.2
 }
 
+h1 {
+    margin: .3em 0;
+    cursor: default;
+    font-size: 1.6em;
+}
+
+h1:last-child {
+    margin: .5em 0 .3em 0;
+}
+
+ul {
+    margin: 0 0 1.5em 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+li > span {
+    display: block;
+    font-size: .8em;
+    cursor: default;
+}
+
+li > a {
+    color: #f06060;
+    text-decoration: none;
+    font-size: .9em;
+}
+
+li > a:hover,
+li > a:active,
+li > a:focus {
+    opacity: .7;
+}
+
 footer {
     font-size: .65em;
-    margin: 0;
+    margin-top: 2.2em;
 }
 
 footer h1 {
     font-size: 1em;
 }
 
-.subreddit-name {
-    display: block;
-    font-size: .8em;
+footer a {
+    color: #f06161;
+    text-decoration: none;
+}
+
+footer a:hover,
+footer a:active,
+footer a:focus {
+    opacity: .7;
 }
