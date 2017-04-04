@@ -30,7 +30,7 @@
         return fetch(search, REQ_CONFIG)
             .then(getJson)
             .then(redditTopFive)
-	        .then(topFive => ({name: 'reddit', comments: topFive}))
+            .then(topFive => ({name: 'reddit', comments: topFive}))
             .catch(() => null);
     }
 
@@ -39,7 +39,7 @@
         return fetch(search, REQ_CONFIG)
             .then(getJson)
             .then(hnTopFive)
-	        .then(topFive => ({name: 'Hacker News', comments: topFive}))
+            .then(topFive => ({name: 'Hacker News', comments: topFive}))
             .catch(() => null);
     }
 
