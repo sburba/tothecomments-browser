@@ -1,6 +1,7 @@
 # To the Comments!
 
-Quick hack of a chrome extension that shows you reddit and Hacker news comment pages for the page you're on
+Quick hack of a chrome extension that shows you reddit and Hacker news comment pages for the page you're on available
+on the [Chrome Web Store](https://chrome.google.com/webstore/detail/to-the-comments/ceghmjigckmapkbgccgehlipbkdhglab)
 
 # Building
 
